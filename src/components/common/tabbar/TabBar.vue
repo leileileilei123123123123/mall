@@ -1,26 +1,30 @@
 <template>
   <div class="tab_bar">
-    <tab-bar-item></tab-bar-item>
+    <slot></slot>
   </div>
 </template>
 
 <script>
-import TabBarItem from "@/components/common/tabbar/TabBarItem";
-export default {
-  name: "TabBar",
-  components:{
-    TabBarItem
+  export default {
+    name: "TabBar",
+    components:{
+    }
   }
-}
 </script>
 
 <style scoped>
  .tab_bar{
-   background-color: #ccc;
+   position: fixed;
+   background-color: #f4f4f4;
    display: flex;
    height: 48px;
    left: 0;
    right: 0;
    bottom: 0;
+   padding-top: 3px;
+   border-top: 1px solid #eee;
+   box-shadow: 0 3px 2px 2px rgba(0, 0, 0, .2);
+
+
  }
 </style>

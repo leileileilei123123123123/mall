@@ -1,6 +1,6 @@
 <template>
  <div>
-   <h2>Category</h2>
+   <h2>Home</h2>
  </div>
 </template>
 
